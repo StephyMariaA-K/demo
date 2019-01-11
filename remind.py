@@ -5,7 +5,7 @@ root = Tkinter.Tk()
 root.configure(bg="white")
 root.title("My Super To Do List")
 root.geometry("500x500")
-txt_input=StringVar()
+
 
 def add_task():
    pass
@@ -24,8 +24,8 @@ lbl_title.pack()
 lbl_display=Tkinter.Label(root,text=" ",bg="white")
 lbl_display.pack()
 
-txt=StringVar()
-txt_input = Tkinter.Entry(root,width=15,textvariable=txt)
+
+txt_input = Tkinter.Entry(root,width=15)
 txt_input.pack()
 
 btn_add_task=Tkinter.Button(root,text="Add task",fg='green',bg='white',command=add_task)
